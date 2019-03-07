@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    int fg=0;
+    while(t--)
+    {
+        fg++;
+        double r,s,c,diff;
+		scanf("%lf",&r);
+		c= 2 * acos(0.0) * r * r;
+		s= (r + r) * (r + r);
+		diff= s - c;
+        printf("Case %d: %.2lf\n",fg, diff);
+    }
+    return 0;
+}
