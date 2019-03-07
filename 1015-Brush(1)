@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int T;
+    scanf("%d",&T);
+    int fg=0;
+    while(T--)
+    {
+        fg++;
+        int n,i,a[1005];
+        scanf("%d",&n);
+        int sum=0;
+        for(i=0;i<n;i++)
+        {
+            scanf("%d",&a[i]);
+            if(a[i]>=0)
+            {
+                sum=sum+a[i];
+            }
+        }
+        printf("Case %d: %d\n",fg,sum);
+
+    }
+    return 0;
+
+}
