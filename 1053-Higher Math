@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    int cs=0;
+    while(t--)
+    {
+        cs++;
+        int a,b,c;
+        scanf("%d%d%d",&a,&b,&c);
+        if(((a*a)+(b*b)==(c*c))||((b*b)+(c*c)==(a*a))||((c*c)+(a*a)==(b*b)))
+            printf("Case %d: yes\n",cs);
+        else
+            printf("Case %d: no\n",cs);
+    }
+    return 0;
+}
